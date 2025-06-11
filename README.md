@@ -11,6 +11,7 @@ Live Preview
 Project Structure
 
 RiseNow
+
 ├── index.html # Main HTML file
 ├── style.css # Custom styling
 └── assets/ # External assets (Bootstrap via CDN)
