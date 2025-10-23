@@ -1,273 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RiseNow – Your Comeback Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/hero-bg.jpg') center/cover no-repeat;
-        }
-        .quote-img {
-            width: 70px;
-            height: 70px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        .counter h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .testimonial p {
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiseNow – Your Comeback Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("assets/img/hero-bg.jpg") center/cover no-repeat;
+    }
+    .quote-img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+    .counter h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">RiseNow</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#toolkit">Toolkit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mental">Mental</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">RiseNow</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="#toolkit">Toolkit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mental">Mental</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-dark text-white text-center py-5 hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-light">RiseNow</h1>
+      <p class="lead mb-4">
+        Helping Strugglers Stand Again – Your Comeback Starts Here
+      </p>
+      <a href="#career" class="btn btn-primary btn-lg">Start Exploring</a>
+      <a href="#stories" class="btn btn-outline-light btn-lg ms-2"
+        >Read Stories</a
+      >
+    </div>
+  </header>
+
+  <!-- Motivational Quote Section (Only Steve Jobs) -->
+  <section id="quotes" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="text-primary mb-4">💡 Motivational Quote</h2>
+      <div class="d-flex flex-column align-items-center bg-white shadow rounded p-4 mx-auto" style="max-width: 600px;">
+        <img src="assets/img/steve.jpg" class="quote-img" alt="Steve Jobs" />
+        <p class="mb-2 fst-italic">
+          “The people who are crazy enough to think they can change the world are
+          the ones who do.”
+        </p>
+        <h6 class="fw-bold">– Steve Jobs</h6>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Section -->
+  <main class="container my-5">
+    <section id="career" class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary mb-4">🎯 Career Paths</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Data Analytics</h5>
+              <p class="card-text">
+                Free courses and certification paths from Coursera, Google & Power BI.
+              </p>
+              <a
+                href="https://www.coursera.org/professional-certificates/google-data-analytics"
+                class="btn btn-outline-primary"
+                target="_blank"
+                >Explore</a
+              >
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-dark text-white text-center py-5 hero-section">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-light">RiseNow</h1>
-            <p class="lead mb-4">Helping Strugglers Stand Again – Your Comeback Starts Here</p>
-            <a href="#career" class="btn btn-primary btn-lg">Start Exploring</a>
-            <a href="#stories" class="btn btn-outline-light btn-lg ms-2">Read Stories</a>
-        </div>
-    </header>
-
-    <!-- Motivational Quotes Section -->
-    <section id="quotes" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container text-center">
-            <h2 class="text-primary mb-4">💡 Motivational Quotes</h2>
-            <div class="row g-4 justify-content-center">
-
-                <div class="col-md-4 d-flex align-items-start bg-white shadow rounded p-3">
-                    <img src="assets/img/elon.jpg" class="quote-img" alt="Elon Musk">
-                    <div>
-                        <p class="mb-1">“When something is important enough, you do it even if the odds are not in your favor.”</p>
-                        <h6 class="fw-bold">– Elon Musk</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4 d-flex align-items-start bg-white shadow rounded p-3">
-                    <img src="assets/img/oprah.jpg" class="quote-img" alt="Oprah Winfrey">
-                    <div>
-                        <p class="mb-1">“The biggest adventure you can take is to live the life of your dreams.”</p>
-                        <h6 class="fw-bold">– Oprah Winfrey</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4 d-flex align-items-start bg-white shadow rounded p-3">
-                    <img src="assets/img/steve.jpg" class="quote-img" alt="Steve Jobs">
-                    <div>
-                        <p class="mb-1">“The people who are crazy enough to think they can change the world are the ones who do.”</p>
-                        <h6 class="fw-bold">– Steve Jobs</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4 d-flex align-items-start bg-white shadow rounded p-3">
-                    <img src="assets/img/jk.jpg" class="quote-img" alt="J.K. Rowling">
-                    <div>
-                        <p class="mb-1">“It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all.”</p>
-                        <h6 class="fw-bold">– J.K. Rowling</h6>
-                    </div>
-                </div>
-
-                <div class="col-md-4 d-flex align-items-start bg-white shadow rounded p-3">
-                    <img src="assets/img/nick.jpeg" class="quote-img" alt="Nick Vujicic">
-                    <div>
-                        <p class="mb-1">“If I fail, I try again, and again, and again.”</p>
-                        <h6 class="fw-bold">– Nick Vujicic</h6>
-                    </div>
-                </div>
-
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text">
+                Skill up with Great Learning, Internshala modules & YouTube guides.
+              </p>
+              <a
+                href="https://www.mygreatlearning.com/academy"
+                class="btn btn-outline-primary"
+                target="_blank"
+                >Explore</a
+              >
             </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Graphic Design</h5>
+              <p class="card-text">
+                Learn with Canva, Coursera & free design resources.
+              </p>
+              <a
+                href="https://www.canva.com/designschool/"
+                class="btn btn-outline-primary"
+                target="_blank"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Career Section -->
-    <main class="container my-5">
-        <section id="career" class="mb-5" data-aos="fade-up">
-            <h2 class="text-primary mb-4">🎯 Career Paths</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Analytics</h5>
-                            <p class="card-text">Free courses and certification paths from Coursera, Google & Power BI.</p>
-                            <a href="https://www.coursera.org/professional-certificates/google-data-analytics" class="btn btn-outline-primary" target="_blank">Explore</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Digital Marketing</h5>
-                            <p class="card-text">Skill up with Great Learning, Internshala modules & YouTube guides.</p>
-                            <a href="https://www.mygreatlearning.com/academy" class="btn btn-outline-primary" target="_blank">Explore</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Graphic Design</h5>
-                            <p class="card-text">Learn with Canva, Coursera & free design resources.</p>
-                            <a href="https://www.canva.com/designschool/" class="btn btn-outline-primary" target="_blank">Explore</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Toolkit Section -->
+    <section id="toolkit" class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary mb-4">💼 Jobless Toolkit</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h6 class="card-title">Internshala</h6>
+              <a
+                href="https://internshala.com"
+                target="_blank"
+                class="btn btn-sm btn-outline-dark"
+                >Visit</a
+              >
             </div>
-        </section>
-
-        <!-- Toolkit Section -->
-        <section id="toolkit" class="mb-5" data-aos="fade-up">
-            <h2 class="text-primary mb-4">💼 Jobless Toolkit</h2>
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h6 class="card-title">Internshala</h6>
-                            <a href="https://internshala.com" target="_blank" class="btn btn-sm btn-outline-dark">Visit</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h6 class="card-title">Forage</h6>
-                            <a href="https://www.theforage.com" target="_blank" class="btn btn-sm btn-outline-dark">Visit</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h6 class="card-title">LetsIntern</h6>
-                            <a href="https://www.letsintern.com" target="_blank" class="btn btn-sm btn-outline-dark">Visit</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card shadow text-center">
-                        <div class="card-body">
-                            <h6 class="card-title">Remotive Jobs</h6>
-                            <a href="https://remotive.io" target="_blank" class="btn btn-sm btn-outline-dark">Visit</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h6 class="card-title">Forage</h6>
+              <a
+                href="https://www.theforage.com"
+                target="_blank"
+                class="btn btn-sm btn-outline-dark"
+                >Visit</a
+              >
             </div>
-        </section>
-
-        <!-- Mental Section -->
-        <section id="mental" class="mb-5" data-aos="fade-up">
-            <h2 class="text-primary mb-4">🧠 Mental Support</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card shadow h-100 p-3 text-center">
-                        <h6>Youper</h6>
-                        <p>Free mental wellness app with AI-based mood tracking.</p>
-                        <a href="https://youper.ai" target="_blank" class="btn btn-outline-primary btn-sm">Visit</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow h-100 p-3 text-center">
-                        <h6>Calm</h6>
-                        <p>Relaxation, meditation, and sleep improvement resources.</p>
-                        <a href="https://www.calm.com" target="_blank" class="btn btn-outline-primary btn-sm">Visit</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow h-100 p-3 text-center">
-                        <h6>BeerBiceps</h6>
-                        <p>Motivational talks and fitness inspiration on YouTube.</p>
-                        <a href="https://www.youtube.com/c/BeerBiceps" target="_blank" class="btn btn-outline-primary btn-sm">Watch</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h6 class="card-title">LetsIntern</h6>
+              <a
+                href="https://www.letsintern.com"
+                target="_blank"
+                class="btn btn-sm btn-outline-dark"
+                >Visit</a
+              >
             </div>
-        </section>
-
-        <!-- Stories Section -->
-        <section id="stories" class="mb-5" data-aos="fade-up">
-            <h2 class="text-primary mb-4">💬 Stories of Hope</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card shadow h-100 p-3">
-                        <p>“From Jobless to Analyst – a journey of persistence and learning.”</p>
-                        <a href="https://www.linkedin.com/pulse/my-journey-from-unemployed-data-analyst-xyz/" target="_blank" class="btn btn-outline-primary btn-sm">Read Story</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card shadow h-100 p-3">
-                        <p>“Power of Belief – TED Talk inspiring comebacks and perseverance.”</p>
-                        <a href="https://www.youtube.com/watch?v=wnHW6o8WMas" target="_blank" class="btn btn-outline-primary btn-sm">Watch Video</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h6 class="card-title">Remotive Jobs</h6>
+              <a
+                href="https://remotive.io"
+                target="_blank"
+                class="btn btn-sm btn-outline-dark"
+                >Visit</a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Counter Section -->
-        <section class="bg-primary text-white text-center py-5" data-aos="fade-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 counter">
-                        <h2>5K+</h2>
-                        <p>Strugglers Inspired</p>
-                    </div>
-                    <div class="col-md-4 counter">
-                        <h2>200+</h2>
-                        <p>Career Resources</p>
-                    </div>
-                    <div class="col-md-4 counter">
-                        <h2>50+</h2>
-                        <p>Success Stories Shared</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Mental Section -->
+    <section id="mental" class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary mb-4">🧠 Mental Support</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow h-100 p-3 text-center">
+            <h6>Youper</h6>
+            <p>Free mental wellness app with AI-based mood tracking.</p>
+            <a
+              href="https://youper.ai"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >Visit</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100 p-3 text-center">
+            <h6>Calm</h6>
+            <p>Relaxation, meditation, and sleep improvement resources.</p>
+            <a
+              href="https://www.calm.com"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >Visit</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow h-100 p-3 text-center">
+            <h6>BeerBiceps</h6>
+            <p>Motivational talks and fitness inspiration on YouTube.</p>
+            <a
+              href="https://www.youtube.com/c/BeerBiceps"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >Watch</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="mb-5 py-5 text-center" data-aos="fade-up">
-            <h2 class="text-primary mb-4">📬 Contact</h2>
-            <p>Email: <a href="mailto:bhaskarbaluni10@gmail.com">bhaskarbaluni10@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/BHASKAR0111" target="_blank">BHASKAR0111</a></p>
-        </section>
-    </main>
+    <!-- Stories Section -->
+    <section id="stories" class="mb-5" data-aos="fade-up">
+      <h2 class="text-primary mb-4">💬 Stories of Hope</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow h-100 p-3">
+            <p>
+              “From Jobless to Analyst – a journey of persistence and learning.”
+            </p>
+            <a
+              href="https://www.linkedin.com/pulse/my-journey-from-unemployed-data-analyst-xyz/"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >Read Story</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow h-100 p-3">
+            <p>
+              “Power of Belief – TED Talk inspiring comebacks and perseverance.”
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=wnHW6o8WMas"
+              target="_blank"
+              class="btn btn-outline-primary btn-sm"
+              >Watch Video</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="text-center text-white bg-dark py-4">
-        <p class="mb-2">© 2025 RiseNow • Empowering Every Comeback</p>
-        <a href="#contact" class="btn btn-outline-light btn-sm">Join the Movement</a>
-    </footer>
+    <!-- Counter Section -->
+    <section class="bg-primary text-white text-center py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 counter">
+            <h2>5K+</h2>
+            <p>Strugglers Inspired</p>
+          </div>
+          <div class="col-md-4 counter">
+            <h2>200+</h2>
+            <p>Career Resources</p>
+          </div>
+          <div class="col-md-4 counter">
+            <h2>50+</h2>
+            <p>Success Stories Shared</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, duration: 1000 });
-    </script>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-5 py-5 text-center" data-aos="fade-up">
+      <h2 class="text-primary mb-4">📬 Contact</h2>
+      <p>Email: <a href="mailto:bhaskarbaluni10@gmail.com">bhaskarbaluni10@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/BHASKAR0111" target="_blank">BHASKAR0111</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-dark py-4">
+    <p class="mb-2">© 2025 RiseNow • Empowering Every Comeback</p>
+    <a href="#contact" class="btn btn-outline-light btn-sm">Join the Movement</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+  </script>
 </body>
 </html>
